@@ -1,34 +1,37 @@
-package com.ankur.mcapp1.details;
+package com.ankur.mcapp1.registration;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.ankur.mcapp1.R;
+import com.ankur.mcapp1.details.DetailsActivity_A1_2016225;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-public class DetailsActivity extends AppCompatActivity {
+public class RegistrationActivity_A1_2016225 extends AppCompatActivity {
 
-    private static final String TAG = "DetailsActivity";
+    private static final String TAG = "RegistrationActivity_A1_2016225";
 
-    @BindView(R.id.tv_full_name)
-    TextView tvFullName;
-    @BindView(R.id.tv_rollnumber)
-    TextView tvRollnumber;
-    @BindView(R.id.tv_branch)
-    TextView tvBranch;
-    @BindView(R.id.tv_course_1)
-    TextView tvCourse1;
-    @BindView(R.id.tv_course_2)
-    TextView tvCourse2;
-    @BindView(R.id.tv_course_3)
-    TextView tvCourse3;
-    @BindView(R.id.tv_course_4)
-    TextView tvCourse4;
+    @BindView(R.id.et_full_name)
+    EditText etFullName;
+    @BindView(R.id.et_rollnumber)
+    EditText etRollNumber;
+    @BindView(R.id.et_branch)
+    EditText etBranch;
+    @BindView(R.id.et_course_1)
+    EditText etCourse1;
+    @BindView(R.id.et_course_2)
+    EditText etCourse2;
+    @BindView(R.id.et_course_3)
+    EditText etCourse3;
+    @BindView(R.id.et_course_4)
+    EditText etCourse4;
 
     private boolean paused = false;
     private boolean stopped = false;
@@ -36,26 +39,9 @@ public class DetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_registration);
         ButterKnife.bind(this);
-
-        setTitle(getString(R.string.registration_details));
-
-        String fullName = getIntent().getStringExtra(getString(R.string.full_name));
-        String rollNumber = getIntent().getStringExtra(getString(R.string.roll_number));
-        String branch = getIntent().getStringExtra(getString(R.string.branch));
-        String firstCourse = getIntent().getStringExtra(getString(R.string.first_course));
-        String secondCourse = getIntent().getStringExtra(getString(R.string.second_course));
-        String thirdCourse = getIntent().getStringExtra(getString(R.string.third_course));
-        String fourthCourse = getIntent().getStringExtra(getString(R.string.fourth_course));
-
-        tvFullName.setText(fullName);
-        tvRollnumber.setText(rollNumber);
-        tvBranch.setText(branch);
-        tvCourse1.setText(firstCourse);
-        tvCourse2.setText(secondCourse);
-        tvCourse3.setText(thirdCourse);
-        tvCourse4.setText(fourthCourse);
+        setTitle(getString(R.string.registration_form));
 
         if (stopped) {
             showActivityTrasition(getString(R.string.on_stop), getString(R.string.on_create));
@@ -67,6 +53,45 @@ public class DetailsActivity extends AppCompatActivity {
         }
         paused = false;
         stopped = false;
+    }
+
+    @OnClick(R.id.btn_submit)
+    public void onBtnSubmitClicked() {
+
+        String fullName = etFullName.getText().toString().trim();
+        String rollNumber = etRollNumber.getText().toString().trim();
+        String branch = etBranch.getText().toString().trim();
+        String firstCourse = etCourse1.getText().toString().trim();
+        String secondCourse = etCourse2.getText().toString().trim();
+        String thirdCourse = etCourse3.getText().toString().trim();
+        String fourthCourse = etCourse4.getText().toString().trim();
+
+        if (fullName.isEmpty() || rollNumber.isEmpty() || branch.isEmpty() || firstCourse.isEmpty()
+                || secondCourse.isEmpty() || thirdCourse.isEmpty() || fourthCourse.isEmpty()) {
+            Toast.makeText(this, "All fields are mandatory", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        Intent intent = new Intent(RegistrationActivity_A1_2016225.this, DetailsActivity_A1_2016225.class);
+        intent.putExtra(getString(R.string.full_name), fullName);
+        intent.putExtra(getString(R.string.roll_number), rollNumber);
+        intent.putExtra(getString(R.string.branch), branch);
+        intent.putExtra(getString(R.string.first_course), firstCourse);
+        intent.putExtra(getString(R.string.second_course), secondCourse);
+        intent.putExtra(getString(R.string.third_course), thirdCourse);
+        intent.putExtra(getString(R.string.fourth_course), fourthCourse);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_clear)
+    public void onBtnClearClicked() {
+        etFullName.setText("");
+        etRollNumber.setText("");
+        etBranch.setText("");
+        etCourse1.setText("");
+        etCourse2.setText("");
+        etCourse3.setText("");
+        etCourse4.setText("");
     }
 
     @Override
@@ -123,4 +148,5 @@ public class DetailsActivity extends AppCompatActivity {
                 "State of activity " + TAG + " changed from " + state1 + " to " + state2,
                 Toast.LENGTH_SHORT).show();
     }
+
 }

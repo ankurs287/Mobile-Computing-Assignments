@@ -10,14 +10,14 @@
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme">
 		<activity
-			android:name=".registration.RegistrationActivity">
+			android:name=".registration.RegistrationActivity_A1_2016225">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
 
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-		<activity android:name=".details.DetailsActivity">
+		<activity android:name=".details.DetailsActivity_A1_2016225">
 		</activity>
 	</application>
 
