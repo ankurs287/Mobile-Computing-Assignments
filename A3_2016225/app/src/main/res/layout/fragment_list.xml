@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/tb"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:background="@color/colorPrimary"
+		android:theme="@style/Theme.AppCompat.Light"
+		app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+		app:title="Quiz App"
+		app:titleTextColor="@color/white"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_qlist"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/btn_submit"
+		android:layout_below="@+id/tb"/>
+
+	<Button
+		android:id="@+id/btn_submit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/colorPrimaryDark"
+		android:text="@string/submit"
+		android:textColor="@color/white"/>
+
+</RelativeLayout>

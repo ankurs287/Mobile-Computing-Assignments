@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/tb_detail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:theme="@style/Theme.AppCompat.Light"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+			app:title="Question Details"
+			app:titleTextColor="@color/white"/>
+
+		<TextView
+			android:id="@+id/tv_question_body"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/value_10dp"
+			android:textColor="@color/gray_7"
+			android:textSize="@dimen/value_18sp"/>
+
+		<RadioGroup
+			android:id="@+id/rg_option"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/rb_true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/true_option"
+				android:textColor="@color/gray_4"
+				android:textSize="@dimen/value_20sp"/>
+
+			<RadioButton
+				android:id="@+id/rb_false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/value_10dp"
+				android:text="@string/false_option"
+				android:textColor="@color/gray_4"
+				android:textSize="@dimen/value_20sp"/>
+
+		</RadioGroup>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent">
+
+		<Button
+			android:id="@+id/btn_save"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorAccent"
+			android:text="@string/save"
+			android:textColor="@color/white"/>
+
+		<Button
+			android:id="@+id/btn_submit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimaryDark"
+			android:text="@string/submit"
+			android:textColor="@color/white"/>
+
+	</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

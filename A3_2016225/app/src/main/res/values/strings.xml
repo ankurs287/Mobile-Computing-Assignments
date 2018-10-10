@@ -1,0 +1,12 @@
+<resources>
+	<string name="app_name">Quiz App</string>
+
+	<string name="true_option">True</string>
+	<string name="false_option">False</string>
+	<string name="save">Save</string>
+	<string name="submit">Submit</string>
+	<string name="submit_answer_message">Submitting answers. Please wait...</string>
+	<string name="answer_saved">Answer saved</string>
+	<string name="please_select_an_option">Please select an option</string>
+
+</resources>

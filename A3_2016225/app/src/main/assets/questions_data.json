@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "body": "It takes 4 seconds for light to travel between the Earth and the Moon.",
+      "answer": false
+    },
+    {
+      "id": 2,
+      "body": "All the planets turn in the same direction around the Sun.",
+      "answer": true
+    },
+    {
+      "id": 3,
+      "body": "At the equator, Earth rotates on its axis at a speed of 1,670 km/h (1,037 m.p.h.).",
+      "answer": true
+    },
+    {
+      "id": 4,
+      "body": "The coast of South America is moving closer to the coast of Africa.",
+      "answer": false
+    },
+    {
+      "id": 5,
+      "body": "The fly flaps its wings approximately 10 times per second.",
+      "answer": false
+    },
+    {
+      "id": 6,
+      "body": "Sound travels more quickly through water than through air.",
+      "answer": true
+    },
+    {
+      "id": 7,
+      "body": "A tropical storm becomes a hurricane when wind speed exceeds 119 km/h (74 m.p.h.).",
+      "answer": true
+    },
+    {
+      "id": 8,
+      "body": "Our eyes don’t perceive motion in a fluid way.",
+      "answer": true
+    },
+    {
+      "id": 9,
+      "body": "A hummingbird’s heart rate can reach 1,000 beats per minute.",
+      "answer": true
+    },
+    {
+      "id": 10,
+      "body": "A plane by the name of Solar Impulse flew around the world powered only by solar energy.",
+      "answer": true
+    },
+    {
+      "id": 11,
+      "body": "In tennis, no woman has ever served at over 200 km/h (124.27 m.p.h.).",
+      "answer": false
+    },
+    {
+      "id": 12,
+      "body": "When hunting prey, cheetahs can run at speeds of 100 km/h (62 m.p.h.).",
+      "answer": true
+    },
+    {
+      "id": 13,
+      "body": "In 1899, the electricity-powered La Jamais Contente (“The Never Satisfied”) became the first motor vehicle to hit the 100 km/h (62 m.p.h.) mark.",
+      "answer": true
+    },
+    {
+      "id": 14,
+      "body": "On Neptune, winds can blow at almost twice the speed of sound.",
+      "answer": true
+    },
+    {
+      "id": 15,
+      "body": "On the Moon, objects fall 6 times more slowly than on Earth.",
+      "answer": true
+    },
+    {
+      "id": 16,
+      "body": "If you were to look down from the North Pole, you would see the Earth turning clockwise on its axis.",
+      "answer": false
+    },
+    {
+      "id": 17,
+      "body": "The Moon’s influence on the tides is about 10 times that of the Sun’s influence on the tides.",
+      "answer": false
+    },
+    {
+      "id": 18,
+      "body": "In cinema, creating the effect of high speed requires projecting a higher-than-normal number of frames per second.",
+      "answer": false
+    },
+    {
+      "id": 19,
+      "body": "All our muscles have the same structure; only their functions vary.",
+      "answer": false
+    },
+    {
+      "id": 20,
+      "body": "The Moon is slowly moving towards the Earth.",
+      "answer": false
+    },
+    {
+      "id": 21,
+      "body": "Earth’s rotation is accelerating.",
+      "answer": false
+    },
+    {
+      "id": 22,
+      "body": "In one day, blood travels a total of 19,000 km (11,800 mi.).",
+      "answer": true
+    },
+    {
+      "id": 23,
+      "body": "When he broke the world record, Usain Bolt averaged a speed of 37.58 km/h (23.35 m.p.h.).",
+      "answer": true
+    },
+    {
+      "id": 24,
+      "body": "Motor neurons relay information at a speed of over 300 km/h (185 m.p.h.).",
+      "answer": true
+    },
+    {
+      "id": 25,
+      "body": "Each year, the Arctic tern travels a distance equivalent to the circumference of the Earth.",
+      "answer": true
+    },
+    {
+      "id": 26,
+      "body": "The largest known tree has a circumference of 137.8 ft. (42 m).",
+      "answer": true
+    },
+    {
+      "id": 27,
+      "body": "There are about as many trees as there are humans on Earth.",
+      "answer": false
+    },
+    {
+      "id": 28,
+      "body": "In the Amazon rainforest, trees capture about 95% of the light.",
+      "answer": true
+    },
+    {
+      "id": 29,
+      "body": "Forests cover about 70% of Earth’s land.",
+      "answer": false
+    },
+    {
+      "id": 30,
+      "body": "Alessandro Volta invented the electric battery in the late 1700s.",
+      "answer": true
+    }
+  ]
+}
